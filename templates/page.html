@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block social_media %}
+    <meta name="description" content="{{ page.description }}">
+
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rgbfaq.com/rgb-banner.png" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:site_name" content="RGB FAQ">
+
+    <meta name="twitter:site" content="@lnp_bp">
+{% endblock social_media %}
+
+{% block content %}
+<section class="section-white">
+    <div>
+        <header class="pb0">
+            <h1>{{ page.title }}</h1>
+            <div class="highlight"></div>
+        </header>
+
+        {{ page.content | safe }}
+    </div>
+</section>
+{% endblock content %}

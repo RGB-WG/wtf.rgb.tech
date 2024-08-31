@@ -1,0 +1,54 @@
+@import "_tachyons"
+
+$code: #2b303b
+
+@media screen and (min-width: 30em)
+  html
+    font-size: 75%
+
+body
+  font-family: "Inter", Helvetica, Arial, sans-serif
+  line-height: 1.6
+
+table
+  border-spacing: 0
+  thead tr
+    @extend .striped--moon-gray
+  th
+    @extend .pa3
+  tr
+    @extend .striped--light-gray
+  td
+    @extend .pa2
+
+section
+  header
+    h1, h2
+      margin: 0
+      padding: 0
+
+  h2
+    font-size: 3rem
+
+  h3
+    @extend .f1-l
+    @extend .f2
+
+  div
+    @extend .center
+    @extend .w-100
+    @extend .mw-none
+    @extend .mw8-m
+    @extend .mw9-l
+    @extend .ph3
+
+pre
+  padding: 2rem
+  font-size: smaller
+  code
+    background-color: inherit
+
+code
+  color: white
+  background-color: $code
+  padding: 0.1em 0.2em
