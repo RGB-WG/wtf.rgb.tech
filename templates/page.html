@@ -15,14 +15,7 @@
 {% endblock social_media %}
 
 {% block content %}
-<section class="section-white">
-    <div>
-        <header class="pb0">
-            <h1>{{ page.title }}</h1>
-            <div class="highlight"></div>
-        </header>
-
-        {{ page.content | safe }}
-    </div>
-</section>
+<article>
+    {{ page.content | safe }}
+</article>
 {% endblock content %}
