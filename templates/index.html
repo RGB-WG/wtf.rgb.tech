@@ -3,13 +3,13 @@
 {% block social_media %}
     <meta name="description" content="{{ section.description }}">
 
-    <meta property="og:title" content="RGB protocol" />
+    <meta property="og:title" content="RGB FAQ" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://rgb.tech/rgb-banner.png" />
+    <meta property="og:image" content="https://rgbfaq.com/rgb-banner.png" />
     <meta name="twitter:card" content="summary_large_image">
 
     <meta property="og:description" content="{{ section.description }}">
-    <meta property="og:site_name" content="RGB protocol">
+    <meta property="og:site_name" content="RGB FAQ">
 
     <meta name="twitter:site" content="@lnp_bp">
 {% endblock social_media %}
@@ -20,17 +20,11 @@
             <div class="w-70-l mw8-l">
                 {{ section.content | safe }}
             </div>
-            <div class="w-30-l flex-column pl0-l pr0-l pl3 pr3">
-                <a class="button button-download ph4 mt0 w-100" href="/guide">
-                    Get Started
-                </a>
-            </div>
         </div>
     </header>
-    {% set bg = ["section-white", "section-red", "section-green", "section-purple"] %}
     {%- for page in section.pages %}
         {% set idx = loop.index % 4 %}
-        <section class="{{bg[idx]}} li-columns">
+        <section class="li-columns">
             <div>
                 <header class="pb0">
                     <h2>{{ page.title }}</h2>
