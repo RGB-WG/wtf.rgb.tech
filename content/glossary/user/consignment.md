@@ -37,13 +37,13 @@ particular RGB contract is called <dfn>consignment</dfn>.
 
 There are two main types of consignments: **contract** and **transfer**.
 
-<dfn>Contract consignments</dfn> are used to provide a user with an information required to use some specific RGB
-contract. They are usually distributed by the contract issuers, but may also be downloaded from asset or contract
-registries and explorers (like <https://rgbex.io>), or sent peer-to-peer, from a user to a user.
+<a name="contract"><dfn>Contract consignments</dfn></a> are used to provide a user with an information required to use
+some specific RGB contract. They are usually distributed by the contract issuers, but may also be downloaded from asset
+or contract registries and explorers (like <https://rgbex.io>), or sent peer-to-peer, from a user to a user.
 
-<dfn>Transfer consignments</dfn> are used by contract clients for [state transfers](state-transfer) from one user to
-another. For instance, when a payment is made, the sender of the payment must provide the beneficiary with a transfer
-consignment.
+<a name="transfer"><dfn>Transfer consignments</dfn></a> are used by contract clients for [state transfers](state-transfer)
+from one user to another. For instance, when a payment is made, the sender of the payment must provide the beneficiary
+with a transfer consignment.
 
 
 ## How do consignments look like?
