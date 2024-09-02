@@ -37,6 +37,7 @@ article
   h2
     padding: 0
     font-size: 1.6rem
+    line-height: 1.4
     font-weight: 200
 
   p, li
@@ -74,10 +75,13 @@ article.contents
     padding: 0
     margin-bottom: 2rem
     display: flex
+    flex-wrap: wrap
+    justify-content: left
     gap: 3rem
 
     > li
-      flex: 1
+      flex: 0 1 calc(30%)
+      min-width: 15em
 
       > ul
         list-style-type: disc

@@ -33,15 +33,24 @@ body
       color: $yellow
       text-decoration: underline
 
-    ol
+    ol, ul
       margin: 0
       padding: 0
       display: flex
       list-style: none
-      gap: 3pt
+      font-weight: 600
+      flex: 1 0 fit-content
       li
         padding: 0
         margin: 0
+
+    ol
+      gap: 3pt
+
+    ul
+      gap: 1em
+      margin-right: 1em
+      justify-content: flex-end
 
   > main
     flex: 1
@@ -97,8 +106,7 @@ body
       margin-bottom: 2rem
 
     img
-      width: 40px
-      padding: 0 10px
+      width: 2.5em
 
 .nav a
   color: $gray
@@ -110,12 +118,13 @@ body
   line-height: 1.2
   + p
     font-size: 2rem !important
+  @media screen and (max-width: 60em)
+    font-size: 4rem
 
 .button
   display: inline-block
   width: 100%
-  min-height: 38px
-  padding: 8px 30px
+  padding: 0.5rem
   text-align: center
   font-weight: 600
   letter-spacing: 0.1rem
@@ -128,3 +137,8 @@ body
   &:hover,
   &:focus
     outline: 0
+
+  &.inline
+    width: fit-content
+    font-size: 80%
+    line-height: 1
