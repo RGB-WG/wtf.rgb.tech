@@ -3,6 +3,10 @@ description = "Definitions with detailed explanations of main RGB terms"
 template = "contents.html"
 +++
 
+<style>
+    article.contents > ul > li { flex-basis: 20%; min-width: 12em }
+</style>
+
 # RGB Glossary
 
 Definitions with detailed explanations of main RGB terms

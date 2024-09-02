@@ -17,6 +17,8 @@ Detailed technical explanation of RGB internals for wallet, contract and applica
   - Contract state
   - Validation
   - Consensus ordering
+  - Concealment
+  - Confidential assets
     
   ### Contract components
   - Schema
@@ -64,6 +66,7 @@ Detailed technical explanation of RGB internals for wallet, contract and applica
   - Kits
   - Fascia
   - Batch
+  - Supplements
   - Blank transition
   - Rights split transition
 
@@ -85,6 +88,7 @@ Detailed technical explanation of RGB internals for wallet, contract and applica
 
   - RGB invoice
   - RGB payment
+  - Address chunking
   - Consign (operation)
   - Accept (operation)
   - Merge-reveal (operation)
