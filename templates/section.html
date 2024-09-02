@@ -22,8 +22,9 @@
 {% endblock content %}
 
 {% block breadcrumbs %}
-    {% set_global path = "" %}
-    {% for item in section.components %}
+    {% set path = "" %}
+    {% set len = section.components | length %}
+    {% for item in section.components | slice(end=len - 1) %}
         {% set_global path = path ~ "/" ~ item %}
         <li>/</li>
         <li><a href='{{ path }}'>{{ item | replace(from="-", to=" ") | title }}</a></li>
