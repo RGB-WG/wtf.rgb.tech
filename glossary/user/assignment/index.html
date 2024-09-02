@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,target-densitydpi=device-dpi" />
+
+  <title>RGB FAQ</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/front.css">
+
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+
+  
+<meta name="description" content="Combination of state (data) with single-use seal definition">
+
+<meta property="og:title" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://rgbfaq.com/rgb-banner.png" />
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:description" content="Combination of state (data) with single-use seal definition">
+<meta property="og:site_name" content="RGB FAQ">
+
+<meta name="twitter:site" content="@lnp_bp">
+
+</head>
+
+<body>
+<nav>
+  <a id="logo" href="/">
+    <img alt="RGB Logo" src="/logo/rgb-symbol-color.svg">
+  </a>
+  <ol>
+    <li><a href="/">RGB WTF</a></li>
+    
+    
+    
+    
+        
+        <li>/</li>
+        <li><a href='&#x2F;glossary'>Glossary</a></li>
+    
+        
+        <li>/</li>
+        <li><a href='&#x2F;glossary&#x2F;user'>User</a></li>
+    
+
+  </ol>
+
+  <ul>
+    <li><a href="/concepts">Concepts</a></li>
+    <li>|</li>
+    <li><a href="/glossary">Glossary</a></li>
+    <li>|</li>
+    <li><a href="/questions-and-answers">Q &amp; A</a></li>
+    <li>|</li>
+    <li><a href="/cookbook">Cookbook</a></li>
+  </ul>
+</nav>
+
+<main>
+  
+<article class="page">
+    <h1 id="assignment">Assignment</h1>
+<p>Assignment is a combination of some data (<em>state</em>) with a specific
+<a href="https://wtf.rgb.tech/glossary/user/assignment/single-use-seal#seal-definition">single-use seal definition</a>, like bitcoin transaction outpoint.</p>
+<aside>
+    <h2>History</h2>
+    <p>The term was first introduced in Spring 2020 by Maxim Orlovsky and was used through all versions of RGB made
+    after, starting from v0.1.0.</p>
+</aside>
+<p>Assignments exist on a client side, and are never part of blockchain. While single-use seal definition <em>references</em>
+some on-chain data structures (like transaction outpoints), this is a mere pointer which is not on-chain.</p>
+<p>In other words, assignment creates a binding between certain value, known only to a user and existing offchain, and
+a specific public single-use resource (i.e. single-use seal). This binding is also not publicly known, unless the
+user creating the assignment would disclose it.</p>
+<h2 id="give-me-an-example">Give me an example</h2>
+<p>Let's assume you are an asset issuer, either a fungible token under a <a href="https://wtf.rgb.tech/glossary/user/assignment/rgb20">RGB20</a> standard, or NFT under
+<a href="https://wtf.rgb.tech/glossary/user/assignment/rgb21">RGB21</a>. The issue is just a declaration, put in the RGB <a href="https://wtf.rgb.tech/glossary/user/assignment/contract">contract</a> <a href="https://wtf.rgb.tech/glossary/user/assignment/genesis">genesis</a> and known only
+to you, plus those whom you'd tell (i.e. share the <a href="https://wtf.rgb.tech/glossary/user/assignment/consignment#contract">contract consignment</a> with). The declaration
+should read "hereby I declare the issue of N tokens, owned by this bitcoin transaction outpoint". Here, the declaration
+is the <em>assignment</em>, the <em>N tokens</em> part is the assigned state, and the provided bitcoin transaction outpoint, owning
+the issued tokens, is a <em>signle-use seal definition</em>.</p>
+<h2 id="what-assignments-are-used-for">What assignments are used for?</h2>
+<p>Assignments are a part of all types of RGB contract <a href="https://wtf.rgb.tech/glossary/user/assignment/operation">operations</a>, including contract <a href="https://wtf.rgb.tech/glossary/user/assignment/genesis">genesis</a>,
+<a href="https://wtf.rgb.tech/glossary/user/assignment/state-transition">state transitions</a> and <a href="https://wtf.rgb.tech/glossary/user/assignment/state-extension">state extensions</a>. They are created by contract users and
+act as operation outputs -- similar to the role of bitcoin transaction outputs.</p>
+<h2 id="how-assignments-are-look-like">How assignments are look like?</h2>
+<aside>
+    <p>It is invalid to say that a state is <q>bound</q> or <q>attached</q> to a bitcoin transaction output;
+    use the term <em>assigned</em> instead.</p>
+</aside>
+<p>You won't meet assignments directly when working with RGB: they are hidden deep inside <a href="https://wtf.rgb.tech/glossary/user/assignment/rgb-libs#core">RGB Core library</a>.
+The only place where RGB user can face them is terminologically: when someone talks about client-side validation,
+the right way to say is that some data or a state is <em>assigned</em> by a user (i.e. <em>client</em>) to a public single-use seal
+definitions and validated in that way.</p>
+
+</article>
+
+</main>
+
+<footer>
+  <p>
+    Created &amp; maintained by <a href="https://www.lnp-bp.org">LNP/BP Labs</a><br/>
+    See a bug? <a href="https://github.com/RGB-WG/rgbfaq.com/issues/new">File an issue!</a>
+  </p>
+  <div>
+    <a href="https://twitter.com/lnp_bp"><img src="/social/twitter.svg" alt="twitter logo" title="Twitter"></a>
+    <a href="https://t.me/RGBTelegram"><img src="/social/telegram.svg" alt="telegram logo" title="Telegram"></a>
+    <a href="https://www.youtube.com/LNP-BP"><img class="pv2" src="/social/youtube.svg" alt="youtube logo" title="YouTube"></a>
+    <a href="https://reddit.com/r/RGB_protocol"><img src="/social/reddit.svg" alt="discord logo" title="Discord"></a>
+    <a href="https://github.com/RGB-WG"><img src="/social/github.svg" alt="github logo" title="GitHub"></a>
+  </div>
+  <p>We do not use cookies or any other tracking technology on visitors to this site</p>
+</footer>
+
+</body>
+</html>
