@@ -35,7 +35,7 @@ particular RGB contract is called <dfn>consignment</dfn>.
 
 ## Types of consignments
 
-There are two main types of consignments: **contract** and **transfer**.
+There are two main types of consignments: _contract_ and _transfer_.
 
 <a name="contract"><dfn>Contract consignments</dfn></a> are used to provide a user with an information required to use
 some specific RGB contract. They are usually distributed by the contract issuers, but may also be downloaded from asset
@@ -51,9 +51,9 @@ with a transfer consignment.
 Consignments are usually binary files, which do not contain human-readable information.
 
 When a users need to send consignment data through a channel which doesn't support a binary format, they have an
-option to use binary-to-text encoding (so-called <dfn>ASCII armoring</dfn>). In RGB, armoring is done in Base85, and the
-encoded data are accompanied by additional headers and checksums. Here is a typical ASCII-armored contract consignment,
-in a cutted version: 
+option to use binary-to-text encoding (see [ASCII armoring](ascii-armoring)). In RGB, armoring is done in Base85, and
+the encoded data are accompanied by additional headers and checksums. Here is a typical ASCII-armored contract
+consignment, in a cut version: 
 
 <aside>
     <p>In this example you can see that the armoring headers include information on the consignment
