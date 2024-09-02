@@ -10,44 +10,43 @@ Glossary of user-facing terms used in RGB smart contracts.
 
 - ## Basics of RGB
 
-  - [RGB invoice](rgb-invoice)
-  - [RGB payment](rgb-payment)
-  - [csApp](cs-app)
-  - [Concealing](concealing)
-  - [RGB consensus](rgb-consensus)
+  - RGB invoice
+  - RGB payment
+  - Client-side Apps (csApps)
+  - Concealing
+  - RGB consensus
 
   ---
 
-  - [RGB container](rgb-container)
+  - RGB container
   - [Consignment](consignment)
-  - [Disclosure](disclosure)
-  - [Kit](kit)
+  - Disclosure
+  - Kit
 
   ---
 
-  - [ASCII armoring](ascii-armoring)
-  - [Baid64](baid64)
+  - ASCII armoring
+  - Baid64
 
 - ## RGB contracts
-  
-  - Contract
-  - Contract state
-  - Global state
+
   - Assets
-  - Assignment
-
-  ---
-
-  - Operation
-  - Genesis
-  - State transition
-  - State extension
+  - Primary & secondary issue
+  - Burn & replace
+  - Engraving
 
   ---
 
   - Schema
-  - AluVM
+  - Contract
+  - Genesis
+  - State transition
 
+  ---
+  
+  - Contract state
+  - Global state
+  - [Assignment](assignment)
 
 - ## RGB software stack
 
@@ -66,8 +65,8 @@ Glossary of user-facing terms used in RGB smart contracts.
   ---
 
   - RGB RPC
-  - RGB command-line
   - RGB libraries
+  - AluVM
 
 ---
 
