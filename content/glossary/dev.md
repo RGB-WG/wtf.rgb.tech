@@ -1,6 +1,6 @@
 +++
 description = "Glossary of developer terms used in RGB smart contracts"
-layout = "contents"
+template = "contents.html"
 permalink = "/glossary/dev"
 +++
 

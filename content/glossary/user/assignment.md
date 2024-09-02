@@ -1,5 +1,6 @@
 +++
 description = "Combination of state (data) with single-use seal definition"
+template = "contents.html"
 permalink = "/glossary/user/assignment"
 +++
 

@@ -6,6 +6,8 @@ permalink = "/glossary/user"
 
 # RGB User Glossary
 
+Glossary of user-facing terms used in RGB smart contracts.
+
 - ## Basics of RGB
 
   - [RGB invoice](rgb-invoice)
