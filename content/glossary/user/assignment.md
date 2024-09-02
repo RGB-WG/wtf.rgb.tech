@@ -1,6 +1,5 @@
 +++
 description = "Combination of state (data) with single-use seal definition"
-layout = "page"
 permalink = "/glossary/user/assignment"
 +++
 
@@ -47,7 +46,7 @@ act as operation outputs -- similar to the role of bitcoin transaction outputs.
     use the term <em>assigned</em> instead.</p>
 </aside>
 
-You won't meet assignments directly when working with RGB: they are hidden deep inside [RGB Core library](rgb-core-library).
+You won't meet assignments directly when working with RGB: they are hidden deep inside [RGB Core library](rgb-libs#core).
 The only place where RGB user can face them is terminologically: when someone talks about client-side validation,
 the right way to say is that some data or a state is _assigned_ by a user (i.e. _client_) to a public single-use seal
 definitions and validated in that way.

@@ -1,6 +1,5 @@
 +++
 description = "Consignment is data package exchanged between users of RGB smart contracts"
-layout = "page"
 permalink = "/glossary/user/consignment"
 +++
 
@@ -41,9 +40,9 @@ There are two main types of consignments: _contract_ and _transfer_.
 some specific RGB contract. They are usually distributed by the contract issuers, but may also be downloaded from asset
 or contract registries and explorers (like <https://rgbex.io>), or sent peer-to-peer, from a user to a user.
 
-<a name="transfer"><dfn>Transfer consignments</dfn></a> are used by contract clients for [state transfers](state-transfer)
-from one user to another. For instance, when a payment is made, the sender of the payment must provide the beneficiary
-with a transfer consignment.
+<a name="transfer"><dfn>Transfer consignments</dfn></a> are used by contract clients for
+[state transfers](rgb-payment#state-transfer) from one user to another. For instance, when a payment is made, the sender
+of the payment must provide the beneficiary with a transfer consignment.
 
 
 ## How do consignments look like?
