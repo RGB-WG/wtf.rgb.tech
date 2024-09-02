@@ -21,9 +21,6 @@ article
   max-width: 60rem
   margin: 4rem auto
 
-  > *
-    max-width: 70%
-
   h1
     margin: 1em 0
     padding: 0
@@ -43,6 +40,10 @@ article
   p
     line-height: 1.6
 
+article.page
+  > *
+    max-width: 70%
+
   aside
     clear: both
     font-size: smaller
@@ -52,6 +53,34 @@ article
     h2
       margin-top: 0
       font-size: 140%
+
+article.contents
+  h2
+    margin-top: 2rem
+    margin-bottom: 1rem
+
+  hr
+    width: 60%
+    border: none
+    height: 1px
+    background-color: rgba(0,0,0,0.2)
+
+  > ul
+    list-style: none
+    padding: 0
+    margin-bottom: 2rem
+    display: flex
+    gap: 3rem
+
+    > li
+      flex: 1
+
+      > ul
+        list-style-type: disc
+        padding-left: 1em
+
+        > li
+          padding: 4pt 0
 
 dfn
   font-weight: 900
