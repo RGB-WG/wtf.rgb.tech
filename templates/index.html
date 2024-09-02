@@ -15,17 +15,7 @@
 {% endblock social_media %}
 
 {% block content %}
-    <header>
-        {{ section.content | safe }}
-    </header>
-    {%- for page in section.pages %}
-        {% set idx = loop.index % 4 %}
-        <section>
-            <header>
-                <h2>{{ page.title }}</h2>
-            </header>
-
-            {{ page.content | safe }}
-        </section>
-    {% endfor -%}
+<article class="contents">
+    {{ section.content | safe }}
+</article>
 {% endblock content %}
