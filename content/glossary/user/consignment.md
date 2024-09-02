@@ -1,6 +1,6 @@
 +++
 description = "Consignment is data package exchanged between users of RGB smart contracts"
-template = "contents.html"
+template = "page.html"
 permalink = "/glossary/user/consignment"
 +++
 

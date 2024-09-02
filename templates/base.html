@@ -20,14 +20,15 @@
 </head>
 
 <body>
-<!-- nav>
-  <div id="logo">
-    <a href="/">
-      <img alt="RGB Logo" src="/logo/rgb-symbol-color.svg">
-    </a>
-  </div>
-  {% block breadcrumbs %} {% endblock %}
-</nav -->
+<nav>
+  <a id="logo" href="/">
+    <img alt="RGB Logo" src="/logo/rgb-symbol-color.svg">
+  </a>
+  <ol>
+  <li><a href="/">RGB FAQ</a></li>
+    {% block breadcrumbs %} {% endblock %}
+  </ol>
+</nav>
 
 <main>
   {% block content %} {% endblock %}

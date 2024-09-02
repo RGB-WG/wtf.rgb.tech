@@ -2,79 +2,15 @@ $gray: #2a3439
 $code: #2b303b
 $yellow: #ffc832
 $footer-gray: $gray
+$link-color: #4299bf
 
 @media screen and (max-width: 30em)
   html
     font-size: 75%
 
-html
-  height: 100%
-
-body
+body, html
   padding: 0
   margin: 0
-  font-family: "Inter", Helvetica, Arial, sans-serif
-  display: flex
-  flex-direction: column
-  min-height: 100vh
-
-  > main
-    flex: 1
-
-  > footer
-    padding: 2rem
-    background-color: $footer-gray
-    color: white
-    display: flex
-    align-items: center
-
-    > *:first-child
-      text-align: left
-    > *
-      text-align: center
-    > *:last-child
-      text-align: right
-
-    > p
-      flex: 3 1
-    > div
-      flex: 1 0 fit-content
-      display: flex
-      justify-content: center
-      align-content: center
-      align-items: center
-      a
-        display: block
-        flex: 1 0 fit-content
-
-    p
-      margin: 0
-
-    ul
-      list-style-type: none
-      padding-left: 0
-      margin-top: 0
-
-    li
-      margin-bottom: 1rem
-
-    a
-      color: $yellow
-      text-decoration: none
-      &:hover
-        color: $yellow
-        text-decoration: underline
-
-    h4
-      font-size: 1.2em
-      font-weight: 600
-      margin-top: 0
-      margin-bottom: 2rem
-
-    img
-      width: 40px
-      padding: 0 10px
-
 
 table
   border-spacing: 0

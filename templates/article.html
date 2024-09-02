@@ -13,3 +13,12 @@
 
 <meta name="twitter:site" content="@lnp_bp">
 {% endblock social_media %}
+
+{% block breadcrumbs %}
+    {% set_global path = "" %}
+    {% for item in page.components %}
+        {% set_global path = path ~ "/" ~ item %}
+        <li>/</li>
+        <li><a href='{{ path }}'>{{ item | capitalize }}</a></li>
+    {% endfor %}
+{% endblock breadcrumbs %}

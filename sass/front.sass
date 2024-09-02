@@ -1,27 +1,107 @@
 @import "_base"
 
-$body-font: "Inter", Helvetica, Arial, sans-serif
-$header-font: "Inter", Helvetica, Arial, sans-serif
+html
+  height: 100%
 
-$link-color: #4299bf
+body
+  font-family: "Inter", Helvetica, Arial, sans-serif
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+  > nav
+    background-color: $gray
+    color: white
+    padding: 4pt
+    display: flex
+    align-items: center
+    gap: 0.5rem
+
+    #logo, #logo:visited, #logo:active, #logo:hover
+      text-decoration: none !important
+
+    #logo
+      display: inline-flex
+      img
+        width: 3em
+        height: 3em
+
+    a, a:visited, a:active
+      color: white
+      text-decoration: none
+    a:hover
+      color: $yellow
+      text-decoration: underline
+
+    ol
+      margin: 0
+      padding: 0
+      display: flex
+      list-style: none
+      gap: 3pt
+      li
+        padding: 0
+        margin: 0
+
+  > main
+    flex: 1
+
+  > footer
+    padding: 2rem
+    background-color: $footer-gray
+    color: white
+    display: flex
+    align-items: center
+
+    > *:first-child
+      text-align: left
+    > *
+      text-align: center
+    > *:last-child
+      text-align: right
+
+    > p
+      flex: 3 1
+    > div
+      flex: 1 0 fit-content
+      display: flex
+      justify-content: center
+      align-content: center
+      align-items: center
+      a
+        display: block
+        flex: 1 0 fit-content
+
+    p
+      margin: 0
+
+    ul
+      list-style-type: none
+      padding-left: 0
+      margin-top: 0
+
+    li
+      margin-bottom: 1rem
+
+    a
+      color: $yellow
+      text-decoration: none
+      &:hover
+        color: $yellow
+        text-decoration: underline
+
+    h4
+      font-size: 1.2em
+      font-weight: 600
+      margin-top: 0
+      margin-bottom: 2rem
+
+    img
+      width: 40px
+      padding: 0 10px
 
 .nav a
   color: $gray
-
-#logo
-  margin-top: 3px
-
-  a
-    @extend .ml0-l
-    @extend .v-mid
-    display: inline-flex
-
-  img
-    width: 66px
-    height: 66px
-
-article h1
-  margin: 0
 
 #title
   font-size: 8rem
@@ -48,13 +128,3 @@ article h1
   &:hover,
   &:focus
     outline: 0
-
-.button.button-secondary
-  font-size: 0.8em
-
-.button-additional
-  display: inline-block
-  text-align: center
-  width: 100%
-  font-size: 0.8em
-
