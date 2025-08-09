@@ -103,7 +103,7 @@ An example of the consignment id:<br/>`rgb:csg:3yJCUNgH-xxfXcHX-E1dfL80-kT2R4z5-
 
 <aside>
     <p>A peer-to-peer network <dfn title="Storage and messaging network"><a href="storm">Storm</a></dfn> is being
-    developed as a part of <a href="https://uviolet.net">Ultraviolet</a> effort. Once developer, it will be used as a
+    developed as a part of <a href="https://uviolet.net">Ultraviolet</a> effort. Once developed, it will be used as a
     default data availability network for RGB information exchange.</p>
 </aside>
 
