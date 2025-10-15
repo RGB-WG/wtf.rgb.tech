@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,target-densitydpi=device-dpi" />
+
+  <title>RGB FAQ</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/front.css">
+
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+
+  
+<meta name="description" content="Glossary of legal terms used in RGB smart contracts">
+
+<meta property="og:title" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://rgbfaq.com/rgb-banner.png" />
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:description" content="Glossary of legal terms used in RGB smart contracts">
+<meta property="og:site_name" content="RGB FAQ">
+
+<meta name="twitter:site" content="@lnp_bp">
+
+</head>
+
+<body>
+<nav>
+  <a id="logo" href="/">
+    <img alt="RGB Logo" src="/logo/rgb-symbol-color.svg">
+  </a>
+  <ol>
+    <li><a href="/">RGB WTF</a></li>
+    
+    
+    
+    
+        
+        <li>/</li>
+        <li><a href='&#x2F;glossary'>Glossary</a></li>
+    
+
+  </ol>
+
+  <ul>
+    <li><a href="/concepts">Concepts</a></li>
+    <li>|</li>
+    <li><a href="/glossary">Glossary</a></li>
+    <li>|</li>
+    <li><a href="/questions-and-answers">Q &amp; A</a></li>
+    <li>|</li>
+    <li><a href="/cookbook">Cookbook</a></li>
+  </ul>
+</nav>
+
+<main>
+  
+<article class="page">
+    <h1 id="rgb-legal-glossary">RGB Legal Glossary</h1>
+<p>Glossary explaining legal meaning of terms relate to RGB smart contracts.</p>
+<h2 id="rgb-contract">RGB contract</h2>
+<p>RGB contract is an agreement between contract parties structured in a form of bearer digital contract. The contract
+may relate to the both digital of physical assets and events. Contracts which relate to only digital world
+potentially may be settled in an automatic way without involving any third parties or intermediaries outside the
+contract parties. RGB contracts may provide an ability for the broader public, which is not a part of the contract
+parties to participate contract operations via mechanism of valencies and state extensions.</p>
+<p>A contract has state and business logic, expressed in terms of ownership rights and executive rights. The contract
+state, rights and conditions of valid operations are defined using RGB schema; only state and operations which
+allowed by the schema declarations and validation scripts are allowed to happen within the contract scope.</p>
+<h2 id="contract-participant">Contract participant</h2>
+<p>Contract participant is an actor which participate in contract operations.</p>
+<p>Contract parties are classified into the following categories:</p>
+<ul>
+<li><em>Contract issuer</em>, an actor creating contract genesis</li>
+<li><em>Contract party</em> – all actors which has ownership rights over RGB contract state</li>
+<li><em>Public</em> – an actor constructing state extensions. Can exist only in contracts providing valencies and state extensions.</li>
+</ul>
+<h2 id="contract-parties">Contract parties</h2>
+<p>RGB contract always have a well-defined parties of the contract, which hold ownership rights over atoms of state.
+The state owned by a contract party is called owned state.A contract party is always also a contract participant.</p>
+<h2 id="contract-rights">Contract rights</h2>
+<p>RGB contract parties have a different rights as a part of the contract conditions defined through RGB schema. The
+rights under RGB contract can be classified into the following categories, defined below:</p>
+<ul>
+<li><a href="https://wtf.rgb.tech/glossary/legal/#ownership-rights">Ownership rights</a></li>
+<li><a href="https://wtf.rgb.tech/glossary/legal/#executive-rights">Executive rights</a></li>
+<li><a href="https://wtf.rgb.tech/glossary/legal/#public-rights">Public rights</a></li>
+</ul>
+<h2 id="ownership-rights">Ownership rights</h2>
+<p>A party having rights over some of the owned contract state. This is exactly the same party which can spend bitcoin
+UTXO serving as a single-use-seal definition for the state assignment.</p>
+<p>It is important to note that ownership rights and ability to spend UTXO participating assignment doesn't necessary
+implies ability to update the contract state or construct a valid state transition (see executive rights). See
+rights mismatch section for the details.</p>
+<h2 id="executive-rights">Executive rights</h2>
+<p>An ability to update the contract state in a final form, i.e. to construct a valid state transition satisfying
+schema validation rules. See also rights mismatch and ownership rights to better understand the difference of
+executive and ownership rights in the scope of RGB smart contract.</p>
+<h2 id="public-rights">Public rights</h2>
+<p>A right under some schemata to use a contract valency and construct a valid state extensions, which can be later
+included into the state via reference from a different valid state transition. See state extension for the details.</p>
+<h2 id="rights-mismatch">Rights mismatch</h2>
+<p>A mismatch between ownership rights and executive rights; an inability to provide an update to the state owned by a
+party. This is caused due to the schema bugs leading to the impossibility to construct a valid state transition with
+a specific set of ownership rights of the party and/or combination of seal definitions in their assignments.</p>
+<p>Rights mismatch may happen in two main cases:</p>
+<ul>
+<li>A user by mistake has assigned different rights to the same UTXO and the schema doesn't provide a way of spending
+that combination of rights with a valid state transition. This is a reason why properly-designed schema must
+provide a rights split transition option.</li>
+<li>A schema doesn't provide a way of constructing state transition for a defined owned state.</li>
+</ul>
+<p>Contractum compiler notifies about this two bugs during schema compilation, however schemata designed without
+Contractum may still contain it.</p>
+
+</article>
+
+</main>
+
+<footer>
+  <p>
+    Created &amp; maintained by <a href="https://www.lnp-bp.org">LNP/BP Labs</a><br/>
+    See a bug? <a href="https://github.com/RGB-WG/rgbfaq.com/issues/new">File an issue!</a>
+  </p>
+  <div>
+    <a href="https://twitter.com/lnp_bp"><img src="/social/twitter.svg" alt="twitter logo" title="Twitter"></a>
+    <a href="https://t.me/RGBTelegram"><img src="/social/telegram.svg" alt="telegram logo" title="Telegram"></a>
+    <a href="https://www.youtube.com/LNP-BP"><img class="pv2" src="/social/youtube.svg" alt="youtube logo" title="YouTube"></a>
+    <a href="https://reddit.com/r/RGB_protocol"><img src="/social/reddit.svg" alt="discord logo" title="Discord"></a>
+    <a href="https://github.com/RGB-WG"><img src="/social/github.svg" alt="github logo" title="GitHub"></a>
+  </div>
+  <p>We do not use cookies or any other tracking technology on visitors to this site</p>
+</footer>
+
+</body>
+</html>
